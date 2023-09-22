@@ -1,7 +1,7 @@
 package Programacion_Jaime.test_input;
 
 
-class HelloWorld {
+class testInputMain {
     public static void main(String[] args) {
         String[] addToList = input.userInput();
         list(addToListStringed(addToList));
