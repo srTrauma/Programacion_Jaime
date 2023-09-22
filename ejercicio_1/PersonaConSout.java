@@ -1,4 +1,4 @@
-package Programacion_Jaime.ejercicio_1;
+package ejercicio_1;
 public class PersonaConSout {
 
     public void hablaConSout(String nombrePers2) {

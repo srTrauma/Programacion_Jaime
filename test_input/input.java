@@ -1,4 +1,4 @@
-package Programacion_Jaime.test_input;
+package test_input;
 
 import java.util.Scanner;
 class input {
