@@ -6,7 +6,7 @@ package Calculator;
 
     
      public static void main(String[] args) {
-        new label();
+        new label("nigger");
 
         
        
