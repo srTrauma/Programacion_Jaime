@@ -1,4 +1,4 @@
-package Calculator;
+package Interface_Tests;
 
 
 //  import javax.swing.JPanel;
@@ -6,7 +6,7 @@ package Calculator;
 
     
      public static void main(String[] args) {
-        new label("nigger");
+        new label("testeo");
 
         
        
