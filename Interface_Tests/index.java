@@ -4,8 +4,7 @@ package Interface_Tests;
 public class index {
 
     public static void main(String[] args) {
-        new label("testeo");
-
+        new panel();
     }
 
 }

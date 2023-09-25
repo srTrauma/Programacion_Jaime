@@ -19,7 +19,13 @@ public class functionClaculadora {
                 System.out.println("Inserte el 2º numero de la operacion, debe ser un numero decimal");
 
                 float num2Suma = cScanner.nextFloat();
-                System.out.println(num1Suma + num2Suma);
+                float result = num1Suma + num2Suma;
+                System.out.println(result);
+                if (result == 69) {
+                    System.out.println("nice");
+                } else {
+                    System.out.println(result);
+                }
                 break;
             case 2:
                 System.out.println("Inserte el 1º numero de la operacion, debe ser un numero decimal");
@@ -29,7 +35,14 @@ public class functionClaculadora {
                 System.out.println("Inserte el 2º numero de la operacion, debe ser un numero decimal");
 
                 float num2Resta = cScanner.nextFloat();
-                System.out.println(num1Resta - num2Resta);
+                
+                float resultResta = num1Resta - num2Resta;
+                System.out.println(resultResta);
+                if (resultResta == 69) {
+                    System.out.println("nice");
+                } else {
+                    System.out.println(resultResta);
+                }
                 break;
             case 3:
                 System.out.println("Inserte el 1º numero de la operacion, debe ser un numero decimal");
