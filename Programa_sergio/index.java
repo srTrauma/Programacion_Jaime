@@ -9,43 +9,48 @@ public class index {
     }
 
     public static void funcGame() {
-        Scanner sc = new Scanner(System.in);
-        int condicionDeGanar = 10;
-        
-        
-        long vida = 100;
-
-       while (vida > 0){
-            long random1 = Math.round(Math.random() * 100);
-            long random2 = Math.round(Math.random() * 100);
-            long vidaPerdida = Math.round(Math.random() * 10);
+        try (Scanner sc = new Scanner(System.in)) {
+            int condicionDeGanar = 10;
             
-            long suma = random1 + random2;
-            System.out
-                    .println("Si falla la vida a perder sera " + vidaPerdida + "\n  Porfavor inserte su nº a continuacion");
-            System.out.println(random1 + "+" + random2);
+            
+            long vida = 100;
 
-            int userImput = sc.nextInt();
+      while (vida > 0){
+                long random1 = Math.round(Math.random() * 100);
+                long random2 = Math.round(Math.random() * 100);
+                long vidaPerdida = Math.round(Math.random() * 50);
+                
+                long suma = random1 + random2;
+                System.out
+                        .println("Si falla la vida a perder sera " + vidaPerdida + "\nPorfavor inserte su nº a continuacion");
+                System.out.println(random1 + "+" + random2);
 
-            if (userImput == suma) {
-                condicionDeGanar --;
-                System.out.println("Buena");
-                System.out.println(condicionDeGanar);
+                int userImput = sc.nextInt();
 
-                if (condicionDeGanar == 0) {
+                if (userImput == suma) {
+                    condicionDeGanar --;
+                    System.out.println("Respuesta correcta");
+                    System.out.println("Le quedan "+condicionDeGanar+" preguntas correctas para ganar");
 
-                    System.out.println("Juego terminado");
+                    if (condicionDeGanar == 0) {
 
-                    break;
+                        System.out.println("Juego terminado, Enhorabuena");
+
+                        break;
+                    }
+                } else {
+
+                    System.out.println("Error");
+
+                    long perdida = (vida - vidaPerdida);
+
+                    vida = perdida;
+                    System.out.println("Le quedan " + vida + " puntos de vida.");
+                    if(vida <= 0){
+                        System.out.println("Ha perdido");
+                        break;
+                    }
                 }
-            } else {
-
-                System.out.println("Fallaste");
-
-                long perdida = (vida - vidaPerdida);
-
-                vida = perdida;
-                System.out.println(vida);
             }
         } 
     }

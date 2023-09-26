@@ -6,14 +6,14 @@ class input {
 
         String[] userSting = null;
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Inserte palabras para poner en el array, delimitados por coma y sin espacio entre ellos");
 
-        System.out.println("Inserte palabras para poner en el array, delimitados por coma y sin espacio entre ellos");
+            String userImput = scanner.nextLine();
 
-        String userImput = scanner.nextLine();
+            userSting = userImput.split(",");
+        }
 
-        userSting = userImput.split(",");
-        
         System.out.println("----------------La lista----------------");
 
         return userSting;
