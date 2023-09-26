@@ -20,10 +20,11 @@ public class functionClaculadora {
 
                 float num2Suma = cScanner.nextFloat();
                 float result = num1Suma + num2Suma;
-                System.out.println(result);
+                
                 if (result == 69) {
                     System.out.println("nice");
                 } else {
+                    System.out.println("El resultado es:\n");
                     System.out.println(result);
                 }
                 break;
@@ -37,10 +38,11 @@ public class functionClaculadora {
                 float num2Resta = cScanner.nextFloat();
                 
                 float resultResta = num1Resta - num2Resta;
-                System.out.println(resultResta);
+                
                 if (resultResta == 69) {
                     System.out.println("nice");
                 } else {
+                    System.out.println("El resultado es:\n");
                     System.out.println(resultResta);
                 }
                 break;
@@ -52,6 +54,7 @@ public class functionClaculadora {
                 System.out.println("Inserte el 2º numero de la operacion, debe ser un numero decimal");
 
                 float num2Division = cScanner.nextFloat();
+                System.out.println("El resultado es:\n");
                 System.out.println(num1Division / num2Division);
                 break;
             case 4:
@@ -62,11 +65,13 @@ public class functionClaculadora {
                 System.out.println("Inserte el 2º numero de la operacion, debe ser un numero decimal");
 
                 float num2Multi = cScanner.nextFloat();
+                System.out.println("El resultado es:\n");
                 System.out.println(num1Multi * num2Multi);
                 break;
             case 5:
                 System.out.println("Inserte el numero del que quiere realizar la raiz:");
                 Double numSqrt = cScanner.nextDouble();
+                System.out.println("El resultado es:\n");
                 System.out.println(Math.sqrt(numSqrt));
                 break;
             case 6:
@@ -75,6 +80,7 @@ public class functionClaculadora {
                 Double numPow = cScanner.nextDouble();
                 System.out.println("Inserte la base a la que elevar el numero anterior");
                 Double numPowExponent = cScanner.nextDouble();
+                System.out.println("El resultado es:\n");
                 System.out.println(Math.pow(numPow, numPowExponent));
                 break;
             default:

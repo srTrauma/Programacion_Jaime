@@ -10,22 +10,22 @@ public class index {
 
     public static void funcGame() {
         Scanner sc = new Scanner(System.in);
-        double condicionDeGanar = 10;
+        int condicionDeGanar = 10;
         
         
-        double vida = 100;
+        long vida = 100;
 
        while (vida > 0){
-            double random1 = Math.round(Math.random() * 100);
-            double random2 = Math.round(Math.random() * 100);
-            double vidaPerdida = Math.round(Math.random() * 10);
+            long random1 = Math.round(Math.random() * 100);
+            long random2 = Math.round(Math.random() * 100);
+            long vidaPerdida = Math.round(Math.random() * 10);
             
-            double suma = random1 + random2;
+            long suma = random1 + random2;
             System.out
-                    .println("Si falla la vida a perder sera" + vidaPerdida + "Porfavor inserte su nº a continuacion");
+                    .println("Si falla la vida a perder sera " + vidaPerdida + "\n  Porfavor inserte su nº a continuacion");
             System.out.println(random1 + "+" + random2);
 
-            Double userImput = sc.nextDouble();
+            int userImput = sc.nextInt();
 
             if (userImput == suma) {
                 condicionDeGanar --;
@@ -42,7 +42,7 @@ public class index {
 
                 System.out.println("Fallaste");
 
-                double perdida = (vida - vidaPerdida);
+                long perdida = (vida - vidaPerdida);
 
                 vida = perdida;
                 System.out.println(vida);
