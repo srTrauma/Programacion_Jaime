@@ -44,6 +44,16 @@ public class functionClaculadora {
                     System.out.println("Inserte el 2º numero de la operacion, debe ser un numero decimal");
 
                     float num2Division = cScanner.nextFloat();
+                    if (num2Division == 0) {
+                        num1Division = 0;
+                        System.out.println("0 no es un numero valido para dividir, por favor intentelo de nuevo");
+                        break;
+                    }
+                    if (num1Division == 0) {
+                        num2Division = 0;
+                        System.out.println("0 no es un numero valido para dividir, por favor intentelo de nuevo");
+                        break;
+                    }
                     System.out.println("El resultado es:\n");
                     System.out.println(num1Division / num2Division);
                     break;
