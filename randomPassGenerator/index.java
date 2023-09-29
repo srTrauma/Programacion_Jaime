@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class index {
     public static void main(String[] args) {
         int index = 15;
-         try (Scanner sc = new Scanner(System.in)) {
+         Scanner sc = new Scanner(System.in) ;
             System.out.println("Cuantas contraseñas quieren ser generadas");
             System.out.println("------------------------------------------------");
             int s = sc.nextInt();
@@ -13,9 +13,10 @@ public class index {
             for (int i = 0; i < s; i++) {
                 System.out.println(getRandomChar(index));
             }
-        }
-            System.out.println("------------------------------------------------");
-        System.out.println("Todas las contraseñas han sido generadas");
+        
+
+        System.out.println("------------------------------------------------");
+        System.out.println("todas las contraseñas han sido generadas");
     }
 
     static String getRandomChar(int index) {
@@ -24,7 +25,7 @@ public class index {
         String generatorStringTop = "abcdefghijklmopqrstuvwxyz" + "123456789";
         StringBuilder generator = new StringBuilder(index);
 
-         try (Scanner scPScanner = new Scanner(System.in)) {
+         Scanner scPScanner = new Scanner(System.in) ;
             System.out.println("Selecione un nivel de seguiridad siendo 3 el mas alto y 1 el mas bajo");
 
             System.out.println("------------------------------------------------");
@@ -52,7 +53,6 @@ public class index {
                 }
                 return generator.toString();
             }
-        }
         
 
     }
