@@ -49,9 +49,9 @@ public class index {
                     System.out.println("Le quedan " + vida + " puntos de vida.");
                     System.out.println("---------------------------");
                     if(vida <= 0){
-                        System.out.println("---------------------------");
                         System.out.println("Ha perdido");
                         System.out.println("---------------------------");
+                        System.exit(0);
                         break;
                     }
                 }

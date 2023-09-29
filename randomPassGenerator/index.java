@@ -13,10 +13,10 @@ public class index {
             for (int i = 0; i < s; i++) {
                 System.out.println(getRandomChar(index));
             }
-        
 
         System.out.println("------------------------------------------------");
         System.out.println("todas las contraseñas han sido generadas");
+        
     }
 
     static String getRandomChar(int index) {
@@ -35,7 +35,6 @@ public class index {
                 for (int l = 0; l < index; l++) {
                     int indiceL = (int) (generatorStringLow.length() * Math.random());
                     generator.append(generatorStringLow.charAt(indiceL));
-
                 }
                 return generator.toString();
             }
